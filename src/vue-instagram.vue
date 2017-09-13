@@ -1,5 +1,6 @@
 <template>
   <div>
+    <slot name="header"></slot>
     <slot v-for="(feed, index) in feeds" name="feeds" :feed="feed"></slot>
     <slot name="error" :error="error"></slot>
   </div>
